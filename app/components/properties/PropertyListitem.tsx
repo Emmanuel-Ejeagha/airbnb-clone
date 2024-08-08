@@ -17,7 +17,7 @@ const PropertyListitem = () => {
       </div>
       <div className="mt-2">
         <p className="text-sm">
-          <strong className="">₦20000 per night</strong>
+          <strong className="text-sm text-gray-500">₦20000 </strong>per night
         </p>
       </div>
     </div>
