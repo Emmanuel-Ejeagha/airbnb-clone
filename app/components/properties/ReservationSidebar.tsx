@@ -23,11 +23,11 @@ const ReservationSidebar = () => {
       <div className="mb-4 flex justify-between align-center">
         <p>MyBnB fee</p>
         <p>₦40,000</p>
-        <hr />
-        <div className="mt-4 flex justify-between align-center font-bold">
-          <p>Total</p>
-          <p>₦840,000</p>
-        </div>
+      </div>
+      <hr />
+      <div className="mt-4 flex justify-between align-center font-bold">
+        <p>Total </p>
+        <p> ₦840,000</p>
       </div>
     </aside>
   );
