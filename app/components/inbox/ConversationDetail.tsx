@@ -19,7 +19,7 @@ const ConversationDetail = () => {
           <p>hdhdhdjsjjnakaknv ki</p>
         </div>
       </div>
-      <div className="mt-4 py-4 px-6 flex border border-gray-300 space-y-4">
+      <div className="mt-4 py-4 px-6 flex border border-gray-300 space-x-4">
         <input
           type="text"
           placeholder="Type your message..."
