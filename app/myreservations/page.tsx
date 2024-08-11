@@ -30,7 +30,7 @@ const MyReservationsPage = () => {
             <p className="mb-2 md:mb-4">
               <strong>Total:</strong> ₦20,000
             </p>
-            <div className="mt-6 inline-block cursor-pointer py-4 px-6 bg-airbnb text-white rounded-xl">
+            <div className="mt-6 inline-block cursor-pointer py-4 px-6 bg-airbnb text-white rounded-xl hover:bg-airbnb-dark">
               Go to property
             </div>
           </div>
@@ -49,19 +49,19 @@ const MyReservationsPage = () => {
           </div>
           <div className="col-span-1 md:col-span-3">
             <h1 className="mb-4 text-xl">Property name</h1>
-            <p className="mb-2">
+            <p className="mb-2 md:mb-4">
               <strong>Check in date:</strong> 08/08/2024
             </p>
-            <p className="mb-2">
+            <p className="mb-2 md:mb-4">
               <strong>Check out date:</strong> 10/08/2024
             </p>
-            <p className="mb-2">
+            <p className="mb-2 md:mb-4">
               <strong>Number of nights:</strong> 2
             </p>
-            <p className="mb-2">
+            <p className="mb-2 md:mb-4">
               <strong>Total:</strong> ₦20,000
             </p>
-            <div className="mt-6 inline-block cursor-pointer py-4 px-6 bg-airbnb text-white rounded-xl">
+            <div className="mt-6 inline-block cursor-pointer py-4 px-6 bg-airbnb text-white rounded-xl hover:bg-airbnb-dark">
               Go to property
             </div>
           </div>
@@ -79,19 +79,19 @@ const MyReservationsPage = () => {
           </div>
           <div className="col-span-1 md:col-span-3">
             <h1 className="mb-4 text-xl">Property name</h1>
-            <p className="mb-2">
+            <p className="mb-2 md:mb-4">
               <strong>Check in date:</strong> 08/08/2024
             </p>
-            <p className="mb-2">
+            <p className="mb-2 md:mb-4">
               <strong>Check out date:</strong> 10/08/2024
             </p>
-            <p className="mb-2">
+            <p className="mb-2 md:mb-4">
               <strong>Number of nights:</strong> 2
             </p>
-            <p className="mb-2">
+            <p className="mb-2 md:mb-4">
               <strong>Total:</strong> ₦20,000
             </p>
-            <div className="mt-6 inline-block cursor-pointer py-4 px-6 bg-airbnb text-white rounded-xl">
+            <div className="mt-6 inline-block cursor-pointer py-4 px-6 bg-airbnb text-white rounded-xl hover:bg-airbnb-dark">
               Go to property
             </div>
           </div>
