@@ -9,7 +9,7 @@ interface ModalProps {
   isOpen: boolean;
 }
 
-const Modal: React.FC<ModalProps> = ({ label, content, isOpen }) => {
+const Modal: React.FC<ModalProps> = ({ label, content, isOpen, close }) => {
   const [showModal, setShowModal] = useState(isOpen);
   useEffect(() => {
     setShowModal(isOpen);
@@ -23,6 +23,7 @@ const Modal: React.FC<ModalProps> = ({ label, content, isOpen }) => {
   }, [close]);
 
   if (!isOpen) {
+    return null;
   }
   return (
     <div className="flex items-center justify-center fixed inset-0 z-50 bg-black/60">
@@ -36,7 +37,10 @@ const Modal: React.FC<ModalProps> = ({ label, content, isOpen }) => {
         >
           <div className="w-full h-auto rounded-xl relative flex flex-col bg-white">
             <header className="h-[60px] flex items-center p-6 rounded-t justify-center relative border-b">
-              <div className="p-3 absolute left-3 hover:bg-gray-300 rounded-full cursor-pointer">
+              <div
+                onClick={handleClose}
+                className="p-3 absolute left-3 hover:bg-gray-300 rounded-full cursor-pointer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
