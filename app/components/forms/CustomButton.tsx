@@ -1,3 +1,4 @@
+// The custom button setup
 interface CustomButtonProps {
   label: string;
   className?: string;
