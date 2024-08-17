@@ -1,6 +1,5 @@
 import { create } from "zustand";
 
-
 interface LoginModalStore {
   isOpen: boolean;
   open: () => void;
