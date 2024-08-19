@@ -24,7 +24,10 @@ const LoginModal = () => {
         <div className="p-5 bg-airbnb text-white rounded-xl opacity-80">
           The error message
         </div>
-        <CustomButton label="Submit" onClick={() => console.log("Test")} />
+        <CustomButton
+          label="Submit"
+          onClick={() => console.log("Testing dev")}
+        />
       </form>
     </>
   );
