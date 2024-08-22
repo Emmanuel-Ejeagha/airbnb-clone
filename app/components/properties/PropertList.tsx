@@ -1,7 +1,7 @@
 "use client";
-import apiService from "@/app/services/apiService";
 import { useEffect, useState } from "react";
 import PropertyListItem from "./PropertyListItem";
+import apiService from "@/app/services/apiService";
 
 export type PropertyType = {
   id: string;
