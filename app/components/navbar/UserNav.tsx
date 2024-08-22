@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import MenuLink from "./MenuLink";
+import LogoutButton from "../LogoutButton";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import useSignupModal from "@/app/hooks/useSignupModal";
 
