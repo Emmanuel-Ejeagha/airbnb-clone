@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ContactButton from "@/app/components/ContactButton";
-import PropertyList from "@/app/components/properties/PropertList";
+import PropertyList from "@/app/components/properties/ProperytList";
 
 const LandlordDetailPage = () => {
   return (
