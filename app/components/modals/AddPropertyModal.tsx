@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { ChangeEvent } from "react";
+import { ChangeEvent, useState } from "react";
 import Image from "next/image";
 import Modal from "./Modal";
 import LoginModal from "./LoginModal";
@@ -218,7 +217,10 @@ const AddPropertyModal = () => {
           </div>
           {errors.map((error, index) => {
             return (
-              <div className="p-5 mb-4 bg-airbnb text-white rounded-xl opacity-80">
+              <div
+                key={index}
+                className="p-5 mb-4 bg-airbnb text-white rounded-xl opacity-80"
+              >
                 {error}
               </div>
             );
