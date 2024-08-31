@@ -9,7 +9,7 @@ const PropertyDetailPage = async ({ params }: { params: { id: string } }) => {
       <div className="mb-4 w-full h-[64vh] rounded-xl overflow-hidden relative">
         <Image
           fill
-          src="/beachhouse.jpg"
+          src={property.image_url}
           alt="beach house"
           className="object-cover w-full h-full"
         />
@@ -23,21 +23,23 @@ const PropertyDetailPage = async ({ params }: { params: { id: string } }) => {
           </span>
           <hr />
           <div className="py-6 flex items-center space-x-4">
-            <Image
-              src="/profile1.jpg"
-              alt="smile"
-              width={50}
-              height={50}
-              className="rounded-full"
-            />
+            {property.landlord.avatar_url(
+              <Image
+                src={property.landlord.avatar_url}
+                alt="house"
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
+            )}
             <p>
-              <strong>Emma Rich </strong>is your host
+              <strong>{property.landlord.name} </strong>is your host
             </p>
           </div>
           <hr />
           <p className="mt-6 text-lg">{property.description}</p>
         </div>
-        <ReservationSidebar />
+        <ReservationSidebar property={property} />
       </div>
     </main>
   );
