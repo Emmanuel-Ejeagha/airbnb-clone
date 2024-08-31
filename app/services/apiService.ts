@@ -52,11 +52,11 @@ const apiService = {
   },
   postWithoutToken: async function (url: string, data: any): Promise<any> {
     console.log("post", url, data);
-
+    console.log("Post");
     return new Promise((resolve, reject) => {
       fetch(`${process.env.NEXT_PUBLIC_API_HOST}${url}`, {
         method: "POST",
-        body: data, // Assuming data should be stringified
+        body: data,
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
