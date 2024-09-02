@@ -34,7 +34,7 @@ const apiService = {
     return new Promise((resolve, reject) => {
       fetch(`${process.env.NEXT_PUBLIC_API_HOST}${url}`, {
         method: "POST",
-        body: data,
+        body: JSON.stringify(data),
         headers: {
           Authorization: `Bearer ${token}`,
         },
