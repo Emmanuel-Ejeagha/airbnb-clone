@@ -20,6 +20,7 @@ const SignupModal = () => {
   // Sumbit functionlity
   const submitSignup = async () => {
     const formData = {
+      name: "emma",
       email: email,
       password1: password1,
       password2: password2,
