@@ -20,14 +20,14 @@ const PropertyDetailPage = async ({ params }: { params: { id: string } }) => {
       </div>
       <div className=" grid grid-cols-1 md:grid-cols-5 gap-4">
         <div className="col-span-3 py-6 pr-6">
-          <h1 className="mb-4 text-4xl">{property.title}</h1>
-          <span className="mb-6 block text-lg text-gray-600">
-            {property.guests} guests - {property.bedrooms} bedrooms -{" "}
+          {/* <h1 className="mb-4 text-4xl">{property.title}</h1> */}
+          {/* <span className="mb-6 block text-lg text-gray-600">
+            {property.guests} guests - {property.bedrooms} bedrooms -
             {property.bathroom} bathroom
-          </span>
+          </span> */}
           <hr />
           <Link
-            href={`/landlords/${property.landlord.id}`}
+            // href={`/landlords/${property.landlord.id}`}
             className="py-6 flex items-center space-x-4"
           >
             {property.landlord.avatar_url(
@@ -40,11 +40,11 @@ const PropertyDetailPage = async ({ params }: { params: { id: string } }) => {
               />
             )}
             <p>
-              <strong>{property.landlord.name} </strong>is your host
+              {/* <strong>{property.landlord.name} </strong>is your host */}
             </p>
           </Link>
           <hr />
-          <p className="mt-6 text-lg">{property.description}</p>
+          {/* <p className="mt-6 text-lg">{property.description}</p> */}
         </div>
         <ReservationSidebar property={property} userId={userId} />
       </div>
