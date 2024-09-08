@@ -15,11 +15,15 @@ const FavoriteButton: React.FC<FavoriteButtonProps> = ({
 }) => {
   const toggleFavorite = async (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
+
     const response = await apiService.post(
-      `/api/properties/${id}/toggle_favourite/`,
+      `/api/properties/${id}/toggle_favorite/`,
       {}
     );
+
+    markFavorite(response.is_favorite);
   };
+
   return (
     <div
       onClick={toggleFavorite}
@@ -33,7 +37,7 @@ const FavoriteButton: React.FC<FavoriteButtonProps> = ({
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-6"
+        className="w-6 h-6"
       >
         <path
           strokeLinecap="round"
