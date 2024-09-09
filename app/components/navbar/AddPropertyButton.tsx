@@ -6,9 +6,11 @@ import useAddPropertyModal from "@/app/hooks/useAddPropertyModal";
 interface AddPropertyButtonProps {
   userId?: string | null;
 }
+
 const AddPropertyButton: React.FC<AddPropertyButtonProps> = ({ userId }) => {
   const loginModal = useLoginModal();
   const addPropertyModal = useAddPropertyModal();
+
   const airbnbYourHome = () => {
     if (userId) {
       addPropertyModal.open();
@@ -16,12 +18,13 @@ const AddPropertyButton: React.FC<AddPropertyButtonProps> = ({ userId }) => {
       loginModal.open();
     }
   };
+
   return (
     <div
       onClick={airbnbYourHome}
       className="p-2 cursor-pointer text-sm font-semibold rounded-full hover:bg-gray-200"
     >
-      MyAirBnB Your Home
+      MyAirBnB your home
     </div>
   );
 };
