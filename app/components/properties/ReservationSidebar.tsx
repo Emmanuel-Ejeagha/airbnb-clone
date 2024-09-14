@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Range } from "react-date-range";
 import { differenceInDays, eachDayOfInterval, format } from "date-fns";
-import DatePicker from "../forms/Calender";
+import DatePicker from "../forms/Calendar";
 import apiService from "@/app/services/apiService";
 import useLoginModal from "@/app/hooks/useLoginModal";
 
@@ -131,7 +131,7 @@ const ReservationSidebar: React.FC<ReservationSidebarProps> = ({
 
   return (
     <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl">
-      <h2 className="mb-5 text-2xl">${property.price_per_night} per night</h2>
+      <h2 className="mb-5 text-2xl">₦{property.price_per_night} per night</h2>
 
       <DatePicker
         value={dateRange}
@@ -164,16 +164,16 @@ const ReservationSidebar: React.FC<ReservationSidebarProps> = ({
 
       <div className="mb-4 flex justify-between align-center">
         <p>
-          ${property.price_per_night} * {nights} nights
+          ₦{property.price_per_night} * {nights} nights
         </p>
 
-        <p>${property.price_per_night * nights}</p>
+        <p>₦{property.price_per_night * nights}</p>
       </div>
 
       <div className="mb-4 flex justify-between align-center">
-        <p>Djangobnb fee</p>
+        <p>Myairbnb fee</p>
 
-        <p>${fee}</p>
+        <p>₦{fee}</p>
       </div>
 
       <hr />
@@ -181,7 +181,7 @@ const ReservationSidebar: React.FC<ReservationSidebarProps> = ({
       <div className="mt-4 flex justify-between align-center font-bold">
         <p>Total</p>
 
-        <p>${totalPrice}</p>
+        <p>₦{totalPrice}</p>
       </div>
     </aside>
   );
